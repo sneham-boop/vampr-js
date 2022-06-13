@@ -29,9 +29,9 @@ describe("Vampire", function() {
       it("should return the vampire with that name", () => {
         expect(rootVampire.vampireWithName(rootVampire.name).name).to.equal(rootVampire.name);
         expect(rootVampire.vampireWithName(offspring1.name).name).to.equal(offspring1.name);
-        // expect(rootVampire.vampireWithName(offspring2.name).name).to.equal(offspring2.name);
-        // expect(rootVampire.vampireWithName(offspring5.name).name).to.equal(offspring5.name);
-        // expect(offspring3.vampireWithName(offspring5.name).name).to.equal(offspring5.name);
+        expect(rootVampire.vampireWithName(offspring2.name).name).to.equal(offspring2.name);
+        expect(rootVampire.vampireWithName(offspring5.name).name).to.equal(offspring5.name);
+        expect(offspring3.vampireWithName(offspring5.name).name).to.equal(offspring5.name);
       });
     });
 
